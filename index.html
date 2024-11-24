@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Job Board</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Post a Job</a>
+                <a href="#">Job Listings</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="filter">
+        <label for="location">Filter by Location: </label>
+        <select id="location" onchange="filterJobs()">
+            <option value="all">All</option>
+            <option value="New York">New York</option>
+            <option value="Remote">Remote</option>
+            <option value="London">London</option>
+        </select>
+    </section>
+
+    <section class="job-listings">
+        <h1>Job Listings</h1>
+        <div class="job" data-location="New York">
+            <h2>Web Developer</h2>
+            <p>Location: New York, USA</p>
+            <p>Company: ABC Corp</p>
+            <a href="#">Apply Now</a>
+        </div>
+        <div class="job" data-location="Remote">
+            <h2>UI/UX Designer</h2>
+            <p>Location: Remote</p>
+            <p>Company: XYZ Ltd</p>
+            <a href="#">Apply Now</a>
+        </div>
+        <div class="job" data-location="London">
+            <h2>Product Manager</h2>
+            <p>Location: London, UK</p>
+            <p>Company: InnovateTech</p>
+            <a href="#">Apply Now</a>
+        </div>
+        <div class="job" data-location="New York">
+            <h2>Frontend Developer</h2>
+            <p>Location: New York, USA</p>
+            <p>Company: Tech Innovators</p>
+            <a href="#">Apply Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Job Board. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

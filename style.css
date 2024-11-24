@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-image: url(job\ board\ .png);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+.filter {
+    text-align: center;
+    margin: 20px;
+}
+
+.filter select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.job-listings {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.job-listings h1 {
+    text-align: center;
+    color: #333;
+}
+
+.job {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    display: block;
+}
+
+.job h2 {
+    color: #333;
+}
+
+.job p {
+    color: #555;
+    margin-bottom: 50px;
+}
+
+.job a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.job a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    margin-top: 30px;
+}
+
